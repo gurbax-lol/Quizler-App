@@ -22,11 +22,11 @@ class QuizInterface:
                                                        fill=THEME_COLOR)
         self.question.grid(row=1, column=0, columnspan=2, pady=50)
 
-        true_button_image = PhotoImage(file="images/true.png")
+        true_button_image = PhotoImage(file=r"images/true.png")
         self.true_button = Button(image=true_button_image, highlightthickness=0, bd=0, command=self.answer_true)
         self.true_button.grid(row=2, column=0)
 
-        false_button_image = PhotoImage(file="images/false.png")
+        false_button_image = PhotoImage(file=r"images/false.png")
         self.false_button = Button(image=false_button_image, highlightthickness=0, bd=0, command=self.answer_false)
         self.false_button.grid(row=2, column=1)
 
